@@ -42,7 +42,7 @@ jobs:
         name: my-trained-pipeline
         path: iris_classifier/trained_models
     - name: Install dependencies
-      run: pip install -r iris_classifier/requirements/test_requirements.txt
+      run: pip install -r iris_classifier/requirements/requirements.txt
     - name: Test with pytest
       run: pytest
 
