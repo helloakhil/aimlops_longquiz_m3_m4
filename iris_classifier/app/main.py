@@ -11,6 +11,7 @@ sys.path.append(str(root))
 sys.path.append(str(file.parents[2]))
 
 # 1. Library imports
+from fastapi.responses import HTMLResponse
 import uvicorn
 from fastapi import FastAPI
 
