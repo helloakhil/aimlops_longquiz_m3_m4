@@ -1,0 +1,15 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./iris_classifier *
+
+include iris_classifier/datasets/base_data.csv
+include iris_classifier/trained_models/*.pkl
+include iris_classifier/VERSION
+
+include iris_classifier/requirements/requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
