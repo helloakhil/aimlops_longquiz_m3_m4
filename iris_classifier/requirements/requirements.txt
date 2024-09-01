@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit-learn
+pydantic
+strictyaml
+black
+pytest
+uvicorn
+fastapi
