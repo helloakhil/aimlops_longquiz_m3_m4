@@ -44,7 +44,7 @@ jobs:
     - name: Install dependencies
       run: pip install -r iris_classifier/requirements/requirements.txt
     - name: Test with pytest
-      run: pytest
+      run: pytest iris_classifier/
 
   build:
     needs: [train, test]
