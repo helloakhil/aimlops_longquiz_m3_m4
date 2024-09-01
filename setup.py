@@ -26,11 +26,10 @@ ROOT_DIR = Path(__file__).resolve().parent
 print(ROOT_DIR)
 PACKAGE_DIR = ROOT_DIR / 'iris_classifier'
 REQUIREMENTS_DIR = PACKAGE_DIR / 'requirements'
-"""
 with open(PACKAGE_DIR / "VERSION") as f:
     _version = f.read().strip()
     about["__version__"] = _version
-"""
+
 
 # What packages are required for this module to be executed?
 def list_reqs(fname="requirements.txt"):
@@ -40,7 +39,7 @@ def list_reqs(fname="requirements.txt"):
 # Where the magic happens:
 setup(
     name=NAME,
-    version="0.0.1",
+    version=about["__version__"],
     description=DESCRIPTION,
     long_description=long_description,
     long_description_content_type="text/markdown",
