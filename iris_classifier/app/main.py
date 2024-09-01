@@ -49,9 +49,5 @@ async def predict_species(iris: IrisSpeciesInput):
 
 
 # 4. Run the API with uvicorn
-#    Will run on http://127.0.0.1:8000
 if __name__ == '__main__':
-    uvicorn.run(app, host='0.0.0.0', port=8000)
-    
-    ## local host--> 127.0.0.0  
-    ## host --> 0.0.0.0 allows all host
+    uvicorn.run(app, host='0.0.0.0', port=8001)
